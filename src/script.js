@@ -64,15 +64,15 @@ window.addEventListener('resize', () => {
 
 });
 
-// const sphere = new THREE.Mesh(
-//   new THREE.SphereGeometry(5, 64, 64),
-//   new THREE.MeshStandardMaterial({
-//     envMap: environmentMap,
-//     metalness: 1,
-//     roughness: 0,
-//   })
-// );
-// scene.add(sphere);
+const sphere = new THREE.Mesh(
+  new THREE.SphereGeometry(5, 64, 64),
+  new THREE.MeshStandardMaterial({
+    envMap: environmentMap,
+    metalness: 1,
+    roughness: 0,
+  })
+);
+scene.add(sphere);
 
 const light = new THREE.AmbientLight(0xffffff, 1);
 scene.add(light);
